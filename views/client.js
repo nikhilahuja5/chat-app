@@ -10,5 +10,3 @@ $(function () {
          $('#messages').append($('<li>').text(msg));
     });
 });
-        
-    

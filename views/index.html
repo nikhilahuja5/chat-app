@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dado Chat</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
-<body><ul id="messages"></ul>
-<form action="">
-  <input id="m" autocomplete="off" /><button>Send</button>
-</form>
+<body>
+  <div class="flex-container">
+    <div class="flex-1">
+    </div>
+    <div class="flex-2"> 
+        <div class="logo">
+          <img>
+          <h1>Dado Chat</h1>
+        </div>
+       <ul id="messages"></ul> 
+         <form action="">
+           <input id="m"  placeholder="Type a message" autocomplete="off" /><button id="send_bttn">Send</button>
+         </form>
+    </div>
+  </div>
+
    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-   <script type="text/javascript" src="client.js"></script> 
+   <script type="text/javascript" src="client.js"></script>
+   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
